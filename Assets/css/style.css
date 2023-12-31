@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #000; */
+}
+
+:root {
+    --dark: #131921;
+    --light: #a9aba9;
+    --small: #cccccc;
+    --secondary-light: #e6e6e6;
+    --green: #febd69;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header section start here */
+
+header {
+    width: 100%;
+    height: 6rem;
+    background: var(--dark);
+    color: #fff;
+    padding: .5rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .left .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: all .1s ease-in;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+header .left .logo:hover,
+header .left .location:hover {
+    border: 1px solid #fff;
+}
+
+header .left .logo img {
+    width: 100%;
+    height: 4rem;
+}
+
+header .left .location {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    width: 9rem;
+    padding: 0 .5rem;
+    height: 100%;
+    margin-right: 1.5rem;
+}
+
+
+
+header .left .location .deliver {
+    display: flex;
+    flex-direction: column;
+    margin-left: .3rem;
+}
+
+header .left .location .deliver small {
+    color: var(--small);
+    font-size: 1.2rem;
+}
+
+header .left .location .deliver span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+header .left .search-box {
+    width: 58rem;
+    height: 78%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+header .left .search-box select {
+    width: 4rem;
+    height: 100%;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 0;
+    color: var(--dark);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--secondary-light);
+}
+
+header .left .search-box .input {
+    padding: 1rem 1.5rem;
+    height: 100%;
+    outline: none;
+    border: none;
+    width: 68rem;
+}
+
+header .left .search-box img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+header .left .search-box .search-btn {
+    height: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .9rem 1rem;
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+/* Header right side start */
+
+header .right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .right a {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+header .right #language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+header .right .box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.2rem;
+    margin-right: .4rem;
+    border: 1px solid transparent;
+}
+
+header .right .box:hover {
+    border: 1px solid #fff;
+}
+
+header .right .box:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .right .box:nth-child(2) a {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+header .right .box:nth-child(2) span {
+    color: var(--small);
+    font-size: 1.2rem;
+}
+
+header .right .box:nth-child(3) a small {
+    font-size: 1.2rem;
+    color: var(--small);
+}
+
+header .right .box:nth-child(4) .ionicon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: .5rem;
+}
+
+header .right .box .ionicon {
+    width: 1.1rem;
+    height: 1.1rem;
+}
