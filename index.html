@@ -6,25 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone</title>
     <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/media.css">
 </head>
 
 <body>
     <header>
         <div class="left">
-            <div class="logo">
-                <a href="#"><img src="Assets/img/amazon-logo.png" alt="amazon-logo"></a>
-            </div>
-            <a href="#" class="location">
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="ionicon"
-                        viewBox="0 0 512 512">
-                        <path fill="#fff"
-                            d="M256 32c-88.22 0-160 68.65-160 153 0 40.17 18.31 93.59 54.42 158.78 29 52.34 62.55 99.67 80 123.22a31.75 31.75 0 0051.22 0c17.42-23.55 51-70.88 80-123.22C397.69 278.61 416 225.19 416 185c0-84.35-71.78-153-160-153zm0 224a64 64 0 1164-64 64.07 64.07 0 01-64 64z" />
-                    </svg></span>
-                <div class="deliver">
-                    <small>Deliver to</small>
-                    <span>India</span>
+            <div class="logo-container">
+                <div class="flex">
+                    <div class="menu-btn">
+                        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+                    </div>
+                    <div class="logo-delivery">
+                        <div class="logo">
+                            <a href="#"><img src="Assets/img/amazon-logo.png" alt="amazon-logo"></a>
+                        </div>
+                        <a href="#" class="location">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="ionicon"
+                                    viewBox="0 0 512 512">
+                                    <path fill="#fff"
+                                        d="M256 32c-88.22 0-160 68.65-160 153 0 40.17 18.31 93.59 54.42 158.78 29 52.34 62.55 99.67 80 123.22a31.75 31.75 0 0051.22 0c17.42-23.55 51-70.88 80-123.22C397.69 278.61 416 225.19 416 185c0-84.35-71.78-153-160-153zm0 224a64 64 0 1164-64 64.07 64.07 0 01-64 64z" />
+                                </svg></span>
+                            <div class="deliver">
+                                <small>Deliver to</small>
+                                <span>India</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </a>
+                <div class="user-login">
+                    <a href="#" class="sign-up-link">
+                        <span> Sign in</span>
+                        <ion-icon name="person" class="person"></ion-icon>
+                    </a>
+                    <a href="#" class="shopping-cart"><ion-icon name="cart"></ion-icon></a>
+                </div>
+            </div>
             <div class="search-box">
                 <select name="Category" id="Category">
                     <option value="">All</option>
@@ -168,6 +185,9 @@
     </header>
 
     <script src="Assets/js/app.js"></script>
+    <!-- Icon links -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
