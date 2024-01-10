@@ -8,6 +8,7 @@
 
 :root {
     --dark: #131921;
+    --nav-bg: #232f3e;
     --light: #a9aba9;
     --small: #cccccc;
     --secondary-light: #e6e6e6;
@@ -30,6 +31,10 @@ a {
 
 .flex {
     display: flex;
+}
+
+.pad-x {
+    padding: 0 2.5rem;
 }
 
 /* Header section start here */
@@ -115,6 +120,7 @@ header .left .logo-container .user-login {
     align-items: center;
     float: right;
     color: #fff;
+    display: none;
 }
 
 header .left .logo-container .user-login a {
@@ -474,4 +480,59 @@ header .login-container .account-info ul li a:hover {
 
 header .login-container .account-info .your-account {
     width: 100%;
+}
+
+/* ===============
+    Header End 
+================== */
+
+
+/* ===============
+    Navbar start
+================== */
+
+#navbar {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background: var(--nav-bg);
+    color: #fff;
+}
+
+#navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* border: 1px solid #fff; */
+}
+
+#navbar ul li {
+    margin: auto .3rem;
+}
+
+#navbar ul li a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 1rem 1rem;
+}
+
+#navbar ul li a:hover {
+    border: 1px solid #fff;
+}
+
+/* Selected a tag that is first link of navbar */
+#navbar ul li:nth-child(1) {
+    padding-left: 0;
+    margin: 0;
+
+}
+
+
+.nav-menu-icon {
+    font-size: 1.6rem;
+    margin-right: .2rem;
 }
