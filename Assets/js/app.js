@@ -16,6 +16,12 @@ signUpBtn.addEventListener("click", (event) => {
     event.stopPropagation();
     header.classList.toggle("login");
     header.classList.remove("language");
-})
+});
 
+
+// Display menu btn All link will be inside
+
+function displayMenu() {
+    console.log("display menu");
+}
 
